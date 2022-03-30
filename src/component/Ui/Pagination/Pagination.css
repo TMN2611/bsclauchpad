@@ -1,4 +1,4 @@
-.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+.MuiPagination-ul li .Mui-selected {
   background-color: var(--primary-color) !important;
   color: white !important;
 }
