@@ -46,9 +46,6 @@
   font-size: 2.4rem;
   margin-bottom: 10px;
 }
-.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
-  overflow-x: hidden !important;
-}
 
 @keyframes FadeIn {
   from {
@@ -60,7 +57,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .css-m5vj9m-MuiStepper-root {
+  .MuiStepper-root {
     gap: 10px;
   }
 }

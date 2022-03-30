@@ -183,20 +183,20 @@
   background-color: var(--primary-color);
   color: white;
 }
-.css-qivjh0-MuiStepLabel-label.Mui-active {
+.MuiStepLabel-label.Mui-active {
   color: var(--primary-color) !important;
 }
-.css-qivjh0-MuiStepLabel-label {
+.MuiStepLabel-label {
   color: #6c757d !important;
 }
 .css-2royc9 {
   justify-content: flex-end;
 }
-.css-ascpo7-MuiStepLabel-root {
+.MuiStepLabel-root {
   flex-direction: column;
   gap: 10px 0;
 }
-.css-a1sg1c-MuiButtonBase-root-MuiButton-root {
+.MuiButtonBase-root {
   background: linear-gradient(
     to right,
     var(--primary-color),
@@ -214,7 +214,7 @@
   gap: 10px;
 }
 
-.css-a1sg1c-MuiButtonBase-root-MuiButton-root.Mui-disabled {
+.MuiButton-root.Mui-disabled {
   -webkit-tap-highlight-color: transparent;
   background: #ccc !important;
   border: none !important;
@@ -272,10 +272,10 @@
   .step-checkpoints-list {
     grid-template-columns: 1fr;
   }
-  .css-m5vj9m-MuiStepper-root {
+  .MuiStepper-root {
     flex-direction: column !important;
   }
-  .css-vnkopk-MuiStepLabel-iconContainer {
+  .MuiStepLabel-iconContainer {
     padding: 0 !important;
   }
   .step-card {

@@ -6,7 +6,7 @@
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  background-image: url("../../../public/img/map.png");
+  background-image: url('../../../public/img/map.png');
   background-size: cover;
   background-attachment: fixed;
   opacity: 0.1;
@@ -35,11 +35,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .projects-pagination-item {
@@ -56,8 +56,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 10px 0;
 }
 
@@ -66,8 +66,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   padding: 20px 0;
 }
 
@@ -95,7 +95,7 @@
   padding: 10px;
 }
 
-.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root {
+.MuiButtonBase-root {
   color: #f1b90c !important;
   background-color: #212121 !important;
 }

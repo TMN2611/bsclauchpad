@@ -3,15 +3,15 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .staking-content {
   padding: 30px;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .staking-sidebar {
@@ -24,13 +24,13 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-shadow: 1px 2px 20px var(--boxshadow-card);
-          box-shadow: 1px 2px 20px var(--boxshadow-card);
+  box-shadow: 1px 2px 20px var(--boxshadow-card);
 }
 
 .staking-sidebar-cards .staking-card-item {
@@ -68,11 +68,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .staking-card-title {
@@ -95,11 +95,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 10px 15px;
 }
 
@@ -116,8 +116,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .staking-tab-content-heading {
@@ -158,15 +158,15 @@
 
 .step-checkpoints-content {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .step-checkpoints-list {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 24px;
 }
 
@@ -176,8 +176,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   color: var(--text-color);
   border: 1px solid rgba(0, 0, 0, 0.12);
   cursor: pointer;
@@ -200,11 +200,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: 40px;
   gap: 10px;
 }
@@ -233,12 +233,12 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border-radius: 50%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .activeIcon {
@@ -246,65 +246,75 @@
   color: white;
 }
 
-.css-qivjh0-MuiStepLabel-label.Mui-active {
+.MuiStepLabel-label.Mui-active {
   color: var(--primary-color) !important;
 }
 
-.css-qivjh0-MuiStepLabel-label {
+.MuiStepLabel-label {
   color: #6c757d !important;
 }
 
 .css-2royc9 {
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
-.css-ascpo7-MuiStepLabel-root {
+.MuiStepLabel-root {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 10px 0;
 }
 
-.css-a1sg1c-MuiButtonBase-root-MuiButton-root {
-  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--primary-color)));
-  background: linear-gradient(to right, var(--primary-color), var(--primary-color));
+.MuiButtonBase-root {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(var(--primary-color)),
+    to(var(--primary-color))
+  );
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--primary-color)
+  );
   border: 1px var(--primary-color) solid !important;
   border-radius: 20px !important;
   color: #fff !important;
   padding: 5px 18px !important;
   -webkit-box-shadow: 1px 0 2px #ff1baf5d;
-          box-shadow: 1px 0 2px #ff1baf5d;
+  box-shadow: 1px 0 2px #ff1baf5d;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 10px;
 }
 
-.css-a1sg1c-MuiButtonBase-root-MuiButton-root.Mui-disabled {
+.MuiButton-root.Mui-disabled {
   -webkit-tap-highlight-color: transparent;
   background: #ccc !important;
   border: none !important;
   outline: none !important;
   -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 @media screen and (max-width: 1200px) {
   .tabs-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     gap: 20px;
   }
 }
@@ -313,8 +323,8 @@
   .staking-card-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     gap: 20px;
     width: 100%;
   }
@@ -327,8 +337,8 @@
   .staking {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
     gap: 20px;
   }
   .staking-sidebar {
@@ -339,12 +349,12 @@
   }
   .staking-card-btns button {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
   .step-checkpoints-list {
     -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -355,23 +365,23 @@
   .detailproject .tabs {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .detailproject .tab__item {
     font-size: 15px;
   }
   .step-checkpoints-list {
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
-  .css-m5vj9m-MuiStepper-root {
+  .MuiStepper-root {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
   }
-  .css-vnkopk-MuiStepLabel-iconContainer {
+  .MuiStepLabel-iconContainer {
     padding: 0 !important;
   }
   .step-card {
@@ -380,8 +390,8 @@
   .step-checkpoints-check {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 /*# sourceMappingURL=staking.css.map */
