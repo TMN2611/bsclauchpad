@@ -122,6 +122,7 @@ export default function StakeContentComponent() {
           disabled={activeStep === 0}
           onClick={handleBack}
           sx={{ mr: 1 }}
+          className='staking-backBtn'
         >
           Back
         </Button>
