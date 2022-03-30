@@ -196,7 +196,7 @@
   flex-direction: column;
   gap: 10px 0;
 }
-.MuiButtonBase-root {
+.MuiStepper-root .MuiButton-root {
   background: linear-gradient(
     to right,
     var(--primary-color),
@@ -213,8 +213,11 @@
   align-items: center;
   gap: 10px;
 }
-
-.MuiButton-root.Mui-disabled {
+.MuiPaginationItem-root {
+  background-color: #212121 !important;
+  color: white !important;
+}
+.MuiStepper-root.Mui-disabled {
   -webkit-tap-highlight-color: transparent;
   background: #ccc !important;
   border: none !important;
