@@ -1,0 +1,78 @@
+.header {
+  padding: 15px 0;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0px 1px 5px 0px rgb(59 55 188 / 30%);
+  background-color: var(--body-bg);
+  transition: 0.5s;
+}
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.navWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.navBranch {
+  font-weight: bold;
+  color: var(--primary-color) !important;
+  font-size: 26px;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  animation: navDisplay 0.5s linear;
+  flex-wrap: wrap;
+}
+.navItem {
+}
+.navMobileToggle {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+}
+.navMobileToggleIcon {
+  color: var(--primary-color);
+  font-size: 30px;
+}
+.navBranchLogo {
+  height: 27px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .navList {
+  }
+  .headerWrapper {
+    flex-direction: column;
+  }
+  .navMobileToggle {
+    display: block;
+  }
+}
+
+@keyframes navDisplay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

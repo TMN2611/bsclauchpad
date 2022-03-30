@@ -1,0 +1,95 @@
+.projects {
+  &::after {
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-image: url('../../../public/img/map.png');
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.1;
+  }
+  &-openNow {
+    padding: 145px 0 80px;
+  }
+  &-heading {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.167;
+    text-align: center;
+    margin: 6px 0 32px;
+    line-height: 1.5;
+  }
+  &-desc {
+    text-align: center;
+  }
+  &-pagination {
+    &-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-item {
+      background-color: #212121;
+      border: 0;
+      color: #f1b914;
+      font-weight: 500;
+      padding: 0.375rem 0.75rem;
+      cursor: pointer;
+    }
+  }
+  &-pagination {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  &-search {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+
+    &-wrapper {
+      margin-bottom: 30px;
+      color: (--primary-color);
+      border: 1px solid var(--boxshadow-card);
+      border-radius: 10px;
+
+      min-width: 360px;
+      margin-right: 20px;
+      background-color: transparent;
+    }
+
+    &-input {
+      background-color: transparent;
+      padding: 10px 10px;
+      width: 90%;
+      caret-color: var(--primary-color);
+      color: var(--text-color);
+    }
+    &-icon {
+      width: 10%;
+      right: 0;
+      padding: 10px;
+    }
+  }
+}
+.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root {
+  color: #f1b90c !important;
+  background-color: #212121 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .projects-openNow {
+    padding: 70px 0 40px;
+  }
+  .projects-heading {
+    font-size: 30px;
+  }
+  .projects-search-wrapper {
+    min-width: unset !important;
+  }
+}

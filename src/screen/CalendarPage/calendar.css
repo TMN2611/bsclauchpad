@@ -1,0 +1,69 @@
+.calendar {
+  padding: 50px 0;
+}
+
+.month {
+  margin: 5px 5px 15px 5px;
+}
+
+.month-name {
+  color: #ccbe88;
+  font-weight: bold;
+}
+
+.day {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.date {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+}
+
+.date.in-month:hover {
+  cursor: pointer;
+  background: #ccbe88;
+}
+
+.today {
+  background: #ccbe88;
+}
+
+.date.prev-month,
+.date.next-month {
+  color: grey;
+}
+
+.rbc-event.rbc-selected {
+  background-color: unset !important;
+}
+
+.rbc-btn-group button {
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.rbc-btn-group button.rbc-active {
+  background-color: var(--primary-color);
+}
+
+.rbc-event {
+  background-color: unset !important;
+}
+
+.rbc-row {
+  overflow-y: auto;
+}
+
+.rbc-day-slot .rbc-event {
+  background: #95bad7 !important;
+}
+/*# sourceMappingURL=calendar.css.map */

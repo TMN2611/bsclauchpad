@@ -1,0 +1,28 @@
+.footerWrapper {
+  width: 100%;
+  display: flex;
+
+  bottom: 0;
+  z-index: 10;
+}
+.footerList {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+.footerItem {
+  color: #6c757d !important;
+  font-size: 14px;
+}
+.footerLink {
+  color: #6c757d !important;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .footerList {
+    flex-direction: column;
+  }
+}

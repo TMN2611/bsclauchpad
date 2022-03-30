@@ -1,0 +1,287 @@
+.staking {
+  display: flex;
+  justify-content: center;
+  &-content {
+    padding: 30px;
+    flex: 1;
+  }
+  &-sidebar {
+    padding: 20px 15px 20px 15px;
+    width: 290px;
+    height: 100%;
+    overflow-y: auto;
+    // background-color: var(--home-card-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 1px 2px 20px var(--boxshadow-card);
+    &-cards {
+      & .staking-card-item {
+        margin-bottom: 16px;
+      }
+    }
+    &-card {
+      &-value {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  & .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 6px;
+    background-color: var(--primary-color);
+    width: 85px;
+    border-radius: 5px;
+    transition: all 0.1s linear;
+  }
+  & .tabs {
+    border-bottom: 1px solid var(--boxshadow-card);
+  }
+  & .tab__item {
+    font-size: 14px;
+  }
+  & .tabs-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-card {
+    &-title {
+      font-weight: 500;
+      border-bottom: 1px #e4e4e4 solid;
+      padding-bottom: 8px;
+      color: var(--text-color);
+      font-size: 16px;
+    }
+    &-body {
+      text-align: center;
+      font-weight: bolder;
+      color: var(--primary-color);
+      line-height: 1.5;
+    }
+    &-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px 15px;
+    }
+    &-item {
+      background-color: var(--staking-card-bg);
+      padding: 15px;
+      border-radius: 20px;
+      min-width: 235px;
+      //   box-shadow: 1px 0px 10px var(--boxshadow-card);
+      text-align: ceter;
+    }
+    &-btns {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &-tab-content {
+    &-heading {
+      margin: 16px 0 30px !important;
+      font-size: 28px !important;
+      text-align: center;
+      font-weight: 500;
+      line-height: 1.2;
+      color: var(--home-text-color);
+    }
+  }
+}
+
+.step {
+  &-content {
+    margin-top: 24px;
+  }
+  &-card {
+    border: 1px solid var(--staking-card-bg);
+    background-color: var(--staking-card-bg);
+    padding: 15px;
+    border-radius: 20px;
+    // box-shadow: 1px 0px 10px var(--boxshadow-card);
+  }
+  &-checkpoints {
+    text-align: center;
+    color: var(--home-text-color);
+    h2 {
+      margin-bottom: 6px;
+      font-size: 24px !important;
+      font-weight: 500;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+    &-content {
+      flex: 1;
+    }
+    &-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 24px;
+    }
+    &-item {
+      border-radius: 15px;
+      display: flex;
+      justify-content: space-between;
+      color: var(--text-color);
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      cursor: pointer;
+      padding: 10px 15px;
+      border-radius: 20px;
+      b {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      p {
+        font-size: 13px;
+        margin: 0 !important;
+      }
+    }
+
+    &-check {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      gap: 10px;
+
+      input {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+      }
+      label {
+        font-size: 16px;
+      }
+      a {
+        font-size: 16px;
+        color: #0d6efd;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Rewritte style Mui component
+.stepIcon {
+  background-color: #ccc;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+}
+.activeIcon {
+  background-color: var(--primary-color);
+  color: white;
+}
+.css-qivjh0-MuiStepLabel-label.Mui-active {
+  color: var(--primary-color) !important;
+}
+.css-qivjh0-MuiStepLabel-label {
+  color: #6c757d !important;
+}
+.css-2royc9 {
+  justify-content: flex-end;
+}
+.css-ascpo7-MuiStepLabel-root {
+  flex-direction: column;
+  gap: 10px 0;
+}
+.css-a1sg1c-MuiButtonBase-root-MuiButton-root {
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--primary-color)
+  );
+  border: 1px var(--primary-color) solid !important;
+  border-radius: 20px !important;
+  color: #fff !important;
+  padding: 5px 18px !important;
+  box-shadow: 1px 0 2px #ff1baf5d;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.css-a1sg1c-MuiButtonBase-root-MuiButton-root.Mui-disabled {
+  -webkit-tap-highlight-color: transparent;
+  background: #ccc !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .tabs-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .staking-card-list {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .staking-card-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .staking {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .staking-sidebar {
+    width: 100%;
+  }
+  .staking-card-btns {
+    gap: 20px;
+  }
+  .staking-card-btns button {
+    flex: 1;
+  }
+  .step-checkpoints-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .staking-content {
+    padding: 0 15px;
+  }
+  .detailproject .tabs {
+    flex-direction: column;
+  }
+  .detailproject .tab__item {
+    font-size: 15px;
+  }
+  .step-checkpoints-list {
+    grid-template-columns: 1fr;
+  }
+  .css-m5vj9m-MuiStepper-root {
+    flex-direction: column !important;
+  }
+  .css-vnkopk-MuiStepLabel-iconContainer {
+    padding: 0 !important;
+  }
+  .step-card {
+    padding: 10px;
+  }
+  .step-checkpoints-check {
+    flex-direction: column;
+  }
+}

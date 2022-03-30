@@ -1,0 +1,12 @@
+.css-1wnsr1i {
+  padding: 20px 10px !important;
+  border: none !important;
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+  .css-1wnsr1i {
+    width: 200px;
+    border-radius: 15px;
+  }
+}

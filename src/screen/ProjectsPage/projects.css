@@ -1,0 +1,114 @@
+.projects::after {
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-image: url("../../../public/img/map.png");
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.1;
+}
+
+.projects-openNow {
+  padding: 145px 0 80px;
+}
+
+.projects-heading {
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.167;
+  text-align: center;
+  margin: 6px 0 32px;
+  line-height: 1.5;
+}
+
+.projects-desc {
+  text-align: center;
+}
+
+.projects-pagination-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects-pagination-item {
+  background-color: #212121;
+  border: 0;
+  color: #f1b914;
+  font-weight: 500;
+  padding: 0.375rem 0.75rem;
+  cursor: pointer;
+}
+
+.projects-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0;
+}
+
+.projects-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 20px 0;
+}
+
+.projects-search-wrapper {
+  margin-bottom: 30px;
+  color: --primary-color;
+  border: 1px solid var(--boxshadow-card);
+  border-radius: 10px;
+  min-width: 360px;
+  margin-right: 20px;
+  background-color: transparent;
+}
+
+.projects-search-input {
+  background-color: transparent;
+  padding: 10px 10px;
+  width: 90%;
+  caret-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.projects-search-icon {
+  width: 10%;
+  right: 0;
+  padding: 10px;
+}
+
+.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root {
+  color: #f1b90c !important;
+  background-color: #212121 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .projects-openNow {
+    padding: 70px 0 40px;
+  }
+  .projects-heading {
+    font-size: 30px;
+  }
+  .projects-search-wrapper {
+    min-width: unset !important;
+  }
+}
+/*# sourceMappingURL=projects.css.map */

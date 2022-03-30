@@ -1,0 +1,184 @@
+.detailproject-iconBox {
+  width: 90px;
+  height: 90px;
+  padding: 18px;
+  border-radius: 50%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+}
+
+.detailproject-iconBox::before {
+  content: '';
+  background-image: url("../../../public/img/choose-icon-bg.png");
+  background-position: center center;
+  background-size: cover;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: rotating 6s infinite forwards linear;
+  animation: rotating 6s infinite forwards linear;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.detailproject-iconBox img {
+  border-radius: 100rem;
+}
+
+.detailproject-titleBox h2 {
+  color: #efe9e9;
+}
+
+.detailproject-social {
+  padding: 5px;
+  color: var(--primary-color);
+}
+
+.detailproject-desc {
+  color: #6c757d;
+  line-height: 2;
+  margin: 15px 0;
+}
+
+.detailproject-push {
+  padding: 3px 10px 4px 10px;
+  background-color: #afafaf1a;
+  color: #666;
+  border-radius: 16px;
+  font-size: 12px;
+}
+
+.detailproject-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 12px;
+  gap: 0 12px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.detailproject-banner::after {
+  position: absolute;
+  content: '';
+  padding: 60px 0 40px 0;
+  background-image: url("../../../public/img/about-right-bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: auto 98%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.detailproject-banner-left {
+  width: 41.6666666667%;
+}
+
+.detailproject-banner-right {
+  position: relative;
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 0 30px var(--boxshadow-card);
+          box-shadow: 1px 0 30px var(--boxshadow-card);
+  border: 0;
+  overflow: hidden;
+  width: 41.6666666667%;
+  padding: 8px 16px;
+  height: 130px;
+  background-color: var(--body-bg);
+}
+
+.detailproject-progress-line {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--boxshadow-card);
+  margin-bottom: 10px;
+}
+
+.detailproject-progress-percent {
+  border-radius: 8px;
+  height: 8px;
+  background-color: var(--primary-color);
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+.detailproject-progress-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+.detailproject-progress-label span {
+  font-size: 12px;
+}
+
+.detailproject-progress-label span:first-child {
+  color: var(--primary-color);
+}
+
+.detailproject-progress-label span:last-child {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.projectStatusClosed {
+  padding: 3px 10px 4px 10px;
+  background-color: #ff000040 !important;
+  color: red;
+  background-color: var(--card-circle-closed-bg);
+  border-radius: 16px;
+  font-size: 12px;
+}
+
+.projectStatusClosed::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: var(--card-circle-closed-text);
+  border-radius: 100rem;
+  display: inline-block;
+  font-size: inherit;
+  text-rendering: auto;
+  line-height: inherit;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .detailproject-banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .detailproject-banner-left {
+    width: 100%;
+  }
+  .detailproject-banner-right {
+    width: 100%;
+  }
+  .detailproject-banner::after {
+    display: none;
+  }
+}
+/*# sourceMappingURL=detailproject.css.map */

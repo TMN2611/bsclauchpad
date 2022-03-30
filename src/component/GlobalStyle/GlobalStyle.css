@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+html {
+  font-family: var(--bs-font-sans-serif);
+  --primary-color: #f1b90c;
+  --body-bg: #fff;
+  --text-color: #212529;
+  --card-bg: #fff;
+  --card-social-bg: rgba(233, 233, 233, 1);
+  /* open */
+  --card-circle-open-text: #666;
+  --card-circle-open-bg: rgb(240 185 19 / 26%);
+
+  /* close */
+  --card-circle-closed-bg: rgb(255 0 0 / 25%);
+  --card-circle-closed-text: red;
+
+  --header-height: 66px;
+
+  --card-highlight-text-color: #f1b90c;
+
+  /* boxshadow */
+  --boxshadow-table: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+
+  --boxshadow-card: rgba(0, 0, 0, 0.219);
+
+  /* Home */
+
+  --home-text-color: #000000cc;
+  --home-card-bg: #f6f6f6;
+  /* staking */
+
+  --staking-card-bg: #f7f8fa;
+
+  font-family: 'roboto', sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+html.dark-mode {
+  --body-bg: #1a1a1a;
+  --card-bg: #212121;
+  --text-color: #fff;
+  --card-social-bg: rgba(255, 255, 255, 0.1);
+  /* open */
+  --card-circle-open-text: #f1b90c;
+  --card-circle-open-bg: rgb(68 65 53 / 26%);
+
+  /* close */
+  --card-circle-closed-bg: rgb(255 0 0 / 25%);
+  --card-circle-closed-text: red;
+  --card-highlight-text-color: #fff;
+
+  /* boxshadow */
+  --boxshadow-table: 0px 2px 1px -1px rgb(255 255 255 / 20%),
+    0px 1px 1px 0px rgb(255 255 255 / 14%),
+    0px 1px 3px 0px rgb(255 255 255 / 12%);
+
+  --boxshadow-card: rgba(255, 255, 255, 0.2);
+
+  /* Home */
+  --home-text-color: #ffffff99;
+  --home-card-bg: #1f1f21;
+  background-color: var(--body-bg);
+
+  /* staking */
+
+  --staking-card-bg: #212121;
+}
+body {
+  color: var(--text-color);
+  margin-top: var(--header-height);
+}
+.container {
+  max-width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+.App {
+  position: relative;
+}
+header .container,
+footer .container {
+  max-width: 1230px;
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  header .container,
+  footer .container {
+    width: 910px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .displayOnLargeTablet {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .displayOnMobile {
+    display: block;
+  }
+}
